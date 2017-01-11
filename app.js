@@ -7,8 +7,8 @@ app.get('/', function (req, res) {
 
 app.get('/email', function (req, res) {
   console.log("email opened. id: " + req.query.id);
-  res.send('OK');
-  // res.sendfile('index.html')
+  //res.send('OK');
+  res.sendfile('google.png')
 })
 
 app.get('/test', function (req, res) {
