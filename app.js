@@ -5,6 +5,12 @@ app.get('/', function (req, res) {
   res.sendfile('index.html')
 })
 
+app.get('/email', function (req, res) {
+  console.log("email opened. id: " + req.query.id);
+  res.send('OK');
+  // res.sendfile('index.html')
+})
+
 app.get('/test', function (req, res) {
   res.send('TEST!')
 })
